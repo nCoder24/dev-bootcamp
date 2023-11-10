@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51736a4d-1cac-4bb7-937d-68c656d476ae" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/com/tw/step9/chance/InvalidRangeException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/com/tw/step9/chance/Chance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/tw/step9/chance/Chance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/com/tw/step9/chance/ChanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/tw/step9/chance/ChanceTest.java" afterDir="false" />
@@ -60,6 +58,7 @@
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
     "rearrange.code.on.save": "true",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "actions.on.save"
   }
 }]]></component>
@@ -81,7 +80,7 @@
       <recent name="com.tw.step9.chance" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ChanceTest.shouldGetTheInverseOfTheChance">
+  <component name="RunManager" selected="JUnit.ChanceTest">
     <configuration name="ChanceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rectangle" />
       <extension name="coverage">
@@ -163,10 +162,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ChanceTest" />
         <item itemvalue="JUnit.ChanceTest.shouldGetTheInverseOfTheChance" />
         <item itemvalue="JUnit.ChanceTest.shouldThrowExceptionIfCreatingChanceOfProbabilityGreaterThanOne" />
         <item itemvalue="JUnit.ChanceTest.shouldThrowExceptionForNegativeProbability" />
-        <item itemvalue="JUnit.ChanceTest" />
         <item itemvalue="JUnit.ChanceTest.shouldGetThePercentageValueOfTheChance" />
       </list>
     </recent_temporary>

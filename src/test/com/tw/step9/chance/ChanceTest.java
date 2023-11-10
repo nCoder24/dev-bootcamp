@@ -8,17 +8,23 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 class ChanceTest {
   @Test
   void shouldThrowExceptionIfCreatingChanceOfNegativeProbability() {
-    assertThrows(InvalidRangeException.class, () -> Chance.create(-0.5));
+    assertThrows(InvalidRangeException.class, () -> Chance.createFromRatio(-0.5));
   }
 
   @Test
   void shouldThrowExceptionIfCreatingChanceOfProbabilityGreaterThanOne() {
-    assertThrows(InvalidRangeException.class, () -> Chance.create(1.5));
+    assertThrows(InvalidRangeException.class, () -> Chance.createFromRatio(1.5));
   }
 
   @Test
   void shouldGetTheInverseOfTheChance() throws InvalidRangeException {
-    Chance chance = Chance.create(0.2);
-    assertEquals(chance.inverse(), Chance.create(0.8));
+    Chance chance = Chance.createFromRatio(0.2);
+    assertEquals(chance.inverse(), Chance.createFromRatio(0.8));
+  }
+  
+  @Test
+  void shouldCreateChanceFromPossibleAndFavourableOutcomes() throws InvalidRangeException {
+    Chance chance = Chance.createFromOutcomes(1, 2);
+    assertEquals(chance, Chance.createFromRatio(0.5));
   }
 }

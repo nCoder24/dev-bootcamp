@@ -10,9 +10,13 @@ public class Chance {
     this.probability = probability;
   }
 
-  public static Chance create(double probability) throws InvalidRangeException {
-    if (probability < 0 || probability > 1) throw new InvalidRangeException("Range is not valid");
-    return new Chance(probability);
+  public static Chance createFromRatio(double ratio) throws InvalidRangeException {
+    if (ratio < 0 || ratio > 1) throw new InvalidRangeException("Range is not valid");
+    return new Chance(ratio);
+  }
+
+  public static Chance createFromOutcomes(int favorableOutcomes, int possibleOutcomes) throws InvalidRangeException {
+    return Chance.createFromRatio((double) favorableOutcomes / possibleOutcomes);
   }
 
   @Override
@@ -29,6 +33,6 @@ public class Chance {
   }
 
   public Chance inverse() throws InvalidRangeException {
-    return Chance.create(1 - this.probability);
+    return Chance.createFromRatio(1 - this.probability);
   }
 }
