@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51736a4d-1cac-4bb7-937d-68c656d476ae" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/tw/step9/shapes/InvalidDimensionException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/com/tw/step9/shapes/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/tw/step9/shapes/Rectangle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/com/tw/step9/shapes/RectangleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/tw/step9/shapes/RectangleTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/tw/step9/shapes/SquareTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/tw/step9/shapes/SquareTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +69,22 @@
       <recent name="com.tw.step9.shapes" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RectangleTest.shouldBeASquareIfCreatedWithOnlyOneSide">
+  <component name="RunManager" selected="JUnit.RectangleTest">
+    <configuration name="RectangleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rectangle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tw.step9.shapes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tw.step9.shapes" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step9.shapes.RectangleTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RectangleTest.shouldBeASquareIfCreatedWithOnlyOneSide" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rectangle" />
       <extension name="coverage">
@@ -134,29 +148,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SquareTest.shouldCalculateAreaForNonZeroSide" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rectangle" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tw.step9.shapes.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tw.step9.shapes" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step9.shapes.SquareTest" />
-      <option name="METHOD_NAME" value="shouldCalculateAreaForNonZeroSide" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RectangleTest" />
         <item itemvalue="JUnit.RectangleTest.shouldBeASquareIfCreatedWithOnlyOneSide" />
         <item itemvalue="JUnit.RectangleTest.shouldCalculatePerimeterForNonZeroDimensions" />
         <item itemvalue="JUnit.RectangleTest.shouldBeASquareIfHeightAndWidthAreSame" />
         <item itemvalue="JUnit.SquareTest" />
-        <item itemvalue="JUnit.SquareTest.shouldCalculateAreaForNonZeroSide" />
       </list>
     </recent_temporary>
   </component>

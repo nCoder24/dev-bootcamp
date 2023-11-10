@@ -9,14 +9,15 @@ public class Rectangle implements TwoDimensionalShape {
     this.height = height;
   }
 
-  public static Rectangle create(double width, double height) {
+  public static Rectangle create(double width, double height) throws InvalidDimensionException {
+    if (width < 0 || height < 0) throw new InvalidDimensionException();
     return new Rectangle(width, height);
   }
 
-  public static Rectangle create(double side) {
-    return new Rectangle(side, side);
+  public static Rectangle create(double side) throws InvalidDimensionException {
+    return create(side, side);
   }
-  
+
   public boolean isSquare() {
     return this.height == this.width;
   }
