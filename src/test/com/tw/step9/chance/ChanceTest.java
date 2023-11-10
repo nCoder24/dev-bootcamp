@@ -3,23 +3,22 @@ package com.tw.step9.chance;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class ChanceTest {
   @Test
-  void shouldGetThePercentageValueOfTheChance() {
-    Chance chance = Chance.ofProbability(0.5);
-    assertEquals(chance.percentage(), 50.0, 0.0);
+  void shouldThrowExceptionIfCreatingChanceOfNegativeProbability() {
+    assertThrows(InvalidRangeException.class, () -> Chance.create(-0.5));
   }
 
   @Test
-  void shouldGetTheProbabilityValueOfTheChance() {
-    Chance chance = Chance.ofPercentage(50);
-    assertEquals(chance.probability(), 0.5, 0.0);
+  void shouldThrowExceptionIfCreatingChanceOfProbabilityGreaterThanOne() {
+    assertThrows(InvalidRangeException.class, () -> Chance.create(1.5));
   }
 
   @Test
-  void shouldGetTheInverseOfTheChance() {
-    Chance chance = Chance.ofPercentage(20);
-    assertEquals(chance.inverse().probability(), 0.8, 0.0);
+  void shouldGetTheInverseOfTheChance() throws InvalidRangeException {
+    Chance chance = Chance.create(0.2);
+    assertEquals(chance.inverse(), Chance.create(0.8));
   }
 }
