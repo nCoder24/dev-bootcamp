@@ -8,25 +8,25 @@ public class RectangleTest {
   @Test
   void shouldCalculateTheAreaForUnitDimensions() throws InvalidDimensionException {
     Rectangle rectangle = Rectangle.create(1.0, 1.0);
-    assertEquals(1.0, rectangle.area());
+    assertEquals(1.0, rectangle.area(), 0.0);
   }
 
   @Test
   void shouldCalculateTheArea() throws InvalidDimensionException {
     Rectangle rectangle = Rectangle.create(2.0, 3.0);
-    assertEquals(6.0, rectangle.area());
+    assertEquals(6.0, rectangle.area(), 0.0);
   }
 
   @Test
   void perimeterShouldBeDoubleOfNonZeroDimensionIfAnotherIsZero() throws InvalidDimensionException {
     Rectangle rectangle = Rectangle.create(3.0, 0.0);
-    assertEquals(6.0, rectangle.perimeter());
+    assertEquals(6.0, rectangle.perimeter(), 0.0);
   }
 
   @Test
   void shouldCalculatePerimeterForNonZeroDimensions() throws InvalidDimensionException {
     Rectangle rectangle = Rectangle.create(3, 4);
-    assertEquals(14.0, rectangle.perimeter());
+    assertEquals(14.0, rectangle.perimeter(), 0.0);
   }
 
   @Test
