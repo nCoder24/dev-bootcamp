@@ -4,7 +4,7 @@ public class Rectangle implements TwoDimensionalShape {
   private final double width;
   private final double height;
 
-  private Rectangle(double width, double height) {
+  protected Rectangle(double width, double height) {
     this.width = width;
     this.height = height;
   }
