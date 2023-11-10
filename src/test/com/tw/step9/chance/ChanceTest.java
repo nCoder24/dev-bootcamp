@@ -27,4 +27,26 @@ class ChanceTest {
     Chance chance = Chance.create(0.5);
     assertEquals(chance.and(Chance.create(0.5)), Chance.create(0.25));
   }
+
+  @Test
+  void shouldRepresentTheChanceOfNotGettingTailWhenFlippingOneCoin() throws InvalidRangeException {
+    Chance chanceOfGettingTail = Chance.create(0.5);
+    assertEquals(chanceOfGettingTail.not(), Chance.create(0.5));
+  }
+
+  @Test
+  void shouldRepresentTheChanceOfGettingTailsWhenFlippingTwoCoins() throws InvalidRangeException {
+    Chance chanceOfGettingTail = Chance.create(0.5);
+    Chance chanceOfGettingBothTails = chanceOfGettingTail.and(chanceOfGettingTail);
+
+    assertEquals(chanceOfGettingBothTails, Chance.create(0.25));
+  }
+
+  @Test
+  void shouldRepresentTheChanceOfGettingAtLeastOneTailsWhenFlippingTwoCoins() throws InvalidRangeException {
+    Chance chanceOfGettingTail = Chance.create(0.5);
+    Chance chanceOfGettingAtLeastOneTails = chanceOfGettingTail.or(chanceOfGettingTail);
+
+    assertEquals(chanceOfGettingAtLeastOneTails, Chance.create(0.75));
+  }
 }

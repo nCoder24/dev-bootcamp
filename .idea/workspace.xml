@@ -9,7 +9,6 @@
   <component name="ChangeListManager">
     <list default="true" id="51736a4d-1cac-4bb7-937d-68c656d476ae" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/com/tw/step9/chance/Chance.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/tw/step9/chance/Chance.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/com/tw/step9/chance/ChanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/tw/step9/chance/ChanceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +82,7 @@
       <recent name="com.tw.step9.chance" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ChanceTest">
+  <component name="RunManager" selected="JUnit.ChanceTest.shouldRepresentTheChanceOfGettingAtLeastOneTailsWhenFlippingTwoCoins">
     <configuration name="ChanceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rectangle" />
       <extension name="coverage">
@@ -131,7 +130,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ChanceTest.shouldThrowExceptionForNegativeProbability" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ChanceTest.shouldRepresentTheChanceOfGettingAtLeastOneTailsWhenFlippingTwoCoins" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rectangle" />
       <extension name="coverage">
         <pattern>
@@ -141,13 +140,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.tw.step9.chance" />
       <option name="MAIN_CLASS_NAME" value="com.tw.step9.chance.ChanceTest" />
-      <option name="METHOD_NAME" value="shouldThrowExceptionForNegativeProbability" />
+      <option name="METHOD_NAME" value="shouldRepresentTheChanceOfGettingAtLeastOneTailsWhenFlippingTwoCoins" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ChanceTest.shouldThrowExceptionIfCreatingChanceOfProbabilityGreaterThanOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ChanceTest.shouldRepresentTheChanceOfNotGettingTailWhenFlippingOneCoin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rectangle" />
       <extension name="coverage">
         <pattern>
@@ -157,7 +156,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.tw.step9.chance" />
       <option name="MAIN_CLASS_NAME" value="com.tw.step9.chance.ChanceTest" />
-      <option name="METHOD_NAME" value="shouldThrowExceptionIfCreatingChanceOfProbabilityGreaterThanOne" />
+      <option name="METHOD_NAME" value="shouldRepresentTheChanceOfNotGettingTailWhenFlippingOneCoin" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -165,11 +164,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ChanceTest.shouldRepresentTheChanceOfGettingAtLeastOneTailsWhenFlippingTwoCoins" />
+        <item itemvalue="JUnit.ChanceTest.shouldRepresentTheChanceOfNotGettingTailWhenFlippingOneCoin" />
         <item itemvalue="JUnit.ChanceTest" />
         <item itemvalue="JUnit.ChanceTest.shouldMultiplyTwoChances" />
         <item itemvalue="JUnit.ChanceTest.shouldGetTheInverseOfTheChance" />
-        <item itemvalue="JUnit.ChanceTest.shouldThrowExceptionIfCreatingChanceOfProbabilityGreaterThanOne" />
-        <item itemvalue="JUnit.ChanceTest.shouldThrowExceptionForNegativeProbability" />
       </list>
     </recent_temporary>
   </component>

@@ -35,4 +35,9 @@ public class Chance {
   public Chance and(Chance other) throws InvalidRangeException {
     return Chance.create(this.probability * other.probability);
   }
+
+
+  public Chance or(Chance other) throws InvalidRangeException {
+    return Chance.create(this.probability + other.probability - this.and(other).probability);
+  }
 }
