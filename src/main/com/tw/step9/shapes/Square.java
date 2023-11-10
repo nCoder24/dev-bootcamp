@@ -4,8 +4,12 @@ public class Square implements TwoDimensionalShape{
 
   private final double side;
 
-  public Square(double side) {
+  private Square(double side) {
     this.side = side;
+  }
+
+  public static Square create(double side) {
+    return new Square(side);
   }
 
   @Override

@@ -146,9 +146,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.SquareTest" />
+        <item itemvalue="JUnit.SquareTest.areaShouldBeZeroIfSideIsZero" />
         <item itemvalue="JUnit.SquareTest.shouldCalculateAreaForNonZero" />
         <item itemvalue="JUnit.SquareTest.shouldCalculateAreaForNonZeroSide" />
-        <item itemvalue="JUnit.SquareTest.areaShouldBeZeroIfSideIsZero" />
         <item itemvalue="JUnit.SquareTest.areaShouldBeZeroIfDimensionIsZero" />
       </list>
     </recent_temporary>
