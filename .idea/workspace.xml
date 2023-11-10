@@ -5,14 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51736a4d-1cac-4bb7-937d-68c656d476ae" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/tw/step9/shapes/Square.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/tw/step9/shapes/TwoDimensionalShape.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/com/tw/step9/shapes/SquareTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/com/tw/step9/shapes/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/tw/step9/shapes/Rectangle.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/tw/step9/shapes/RectangleTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/tw/step9/shapes/RectangleTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,6 +44,7 @@
     "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
@@ -40,8 +52,19 @@
     "settings.editor.selected.configurable": "preferences.sourceCode.Java"
   }
 }]]></component>
-  <component name="RunManager" selected="JUnit.RectangleTest">
-    <configuration name="RectangleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.tw.step9.shapes" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.tw.step9.shapes" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.tw.step9.shapes" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.SquareTest">
+    <configuration name="SquareTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rectangle" />
       <extension name="coverage">
         <pattern>
@@ -50,13 +73,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.tw.step9.shapes" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step9.shapes.RectangleTest" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step9.shapes.SquareTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RectangleTest.perimeterShouldBeDoubleOfNonZeroDimensionIfAnotherIsZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SquareTest.areaShouldBeZeroIfDimensionIsZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rectangle" />
       <extension name="coverage">
         <pattern>
@@ -65,14 +88,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.tw.step9.shapes" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step9.shapes.RectangleTest" />
-      <option name="METHOD_NAME" value="perimeterShouldBeDoubleOfNonZeroDimensionIfAnotherIsZero" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step9.shapes.SquareTest" />
+      <option name="METHOD_NAME" value="areaShouldBeZeroIfDimensionIsZero" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RectangleTest.shouldCalculatePerimeterForNonZeroDimensions" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SquareTest.areaShouldBeZeroIfSideIsZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="rectangle" />
       <extension name="coverage">
         <pattern>
@@ -81,8 +104,40 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.tw.step9.shapes" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step9.shapes.RectangleTest" />
-      <option name="METHOD_NAME" value="shouldCalculatePerimeterForNonZeroDimensions" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step9.shapes.SquareTest" />
+      <option name="METHOD_NAME" value="areaShouldBeZeroIfSideIsZero" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SquareTest.shouldCalculateAreaForNonZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rectangle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tw.step9.shapes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tw.step9.shapes" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step9.shapes.SquareTest" />
+      <option name="METHOD_NAME" value="shouldCalculateAreaForNonZero" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SquareTest.shouldCalculateAreaForNonZeroSide" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="rectangle" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tw.step9.shapes.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tw.step9.shapes" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step9.shapes.SquareTest" />
+      <option name="METHOD_NAME" value="shouldCalculateAreaForNonZeroSide" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -90,9 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RectangleTest" />
-        <item itemvalue="JUnit.RectangleTest.shouldCalculatePerimeterForNonZeroDimensions" />
-        <item itemvalue="JUnit.RectangleTest.perimeterShouldBeDoubleOfNonZeroDimensionIfAnotherIsZero" />
+        <item itemvalue="JUnit.SquareTest" />
+        <item itemvalue="JUnit.SquareTest.shouldCalculateAreaForNonZero" />
+        <item itemvalue="JUnit.SquareTest.shouldCalculateAreaForNonZeroSide" />
+        <item itemvalue="JUnit.SquareTest.areaShouldBeZeroIfSideIsZero" />
+        <item itemvalue="JUnit.SquareTest.areaShouldBeZeroIfDimensionIsZero" />
       </list>
     </recent_temporary>
   </component>

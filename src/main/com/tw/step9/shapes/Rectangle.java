@@ -1,6 +1,6 @@
 package com.tw.step9.shapes;
 
-public class Rectangle {
+public class Rectangle implements TwoDimensionalShape {
   private final double width;
   private final double height;
 
@@ -9,10 +9,12 @@ public class Rectangle {
     this.height = height;
   }
 
+  @Override
   public double area() {
     return this.width * this.height;
   }
 
+  @Override
   public double perimeter() {
     return 2 * (this.width + this.height);
   }
