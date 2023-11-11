@@ -8,9 +8,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51736a4d-1cac-4bb7-937d-68c656d476ae" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/com/tw/step9/length/Length.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/com/tw/step9/length/LengthTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/tw/step9/length/ConversionFactor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tw/step9/length/Length.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/tw/step9/length/Length.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +22,7 @@
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -84,7 +84,7 @@
       <recent name="com.tw.step9.chance" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LengthTest.shouldCalculateTheDifferenceOfTwoLengthsMillimeterAndCentimeter">
+  <component name="RunManager" selected="JUnit.LengthTest">
     <configuration name="LengthTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dev-bootcamp" />
       <extension name="coverage">
@@ -166,8 +166,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LengthTest.shouldCalculateTheDifferenceOfTwoLengthsMillimeterAndCentimeter" />
         <item itemvalue="JUnit.LengthTest" />
+        <item itemvalue="JUnit.LengthTest.shouldCalculateTheDifferenceOfTwoLengthsMillimeterAndCentimeter" />
         <item itemvalue="JUnit.LengthTest.shouldCalculateTheDifferenceOfTwoLengthsInInchAndCentimeter" />
         <item itemvalue="JUnit.LengthTest.shouldCalculateTheDifferenceOfTwoLengthsInInchAndFeet" />
         <item itemvalue="JUnit.LengthTest.shouldCalculateTheDifferenceOfTwoLengthsInFeet" />

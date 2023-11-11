@@ -1,4 +1,4 @@
-package com.tw.step9.length;
+package com.tw.step9.measurement;
 
 import java.util.Objects;
 
@@ -14,16 +14,20 @@ public class Length {
     return new Length(value);
   }
 
+  private static double standardize(double value, LengthUnits unit) {
+    return value * unit.conversionFactor;
+  }
+
   public static Length feet(double value) {
-    return Length.inch(value * 12);
+    return Length.inch(standardize(value, LengthUnits.FEET));
   }
 
   public static Length centimeter(double value) {
-    return Length.inch(value / 2.5);
+    return Length.inch(standardize(value, LengthUnits.CM));
   }
 
   public static Length millimeter(int value) {
-    return Length.centimeter((double) value / 10);
+    return Length.inch(standardize(value, LengthUnits.MM));
   }
 
   @Override
