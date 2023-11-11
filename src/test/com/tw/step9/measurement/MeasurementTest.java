@@ -6,7 +6,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 public class MeasurementTest {
-
   @Test
   void shouldCompareLengthsInInchAndFeet() {
     Measurement feet = Measurement.create(1, Units.FEET);

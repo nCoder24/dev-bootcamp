@@ -11,13 +11,9 @@ public class Measurement implements Comparable<Measurement> {
     this.unit = unit;
   }
 
-  private static double standardize(double value, Units unit) {
-    return value * unit.conversionFactor;
-  }
-
   public static Measurement create(double value, Units unit) {
     // TODO: 11/11/23 add validation checks
-    return new Measurement(standardize(value, unit), unit);
+    return new Measurement(unit.standardize(value), unit);
   }
 
   @Override
@@ -25,7 +21,7 @@ public class Measurement implements Comparable<Measurement> {
     if (this == o) return true;
     if (o == null || this.getClass() != o.getClass()) return false;
     Measurement measurement = (Measurement) o;
-    if (this.unit != measurement.unit) return false;
+    if (!this.unit.type.equals(measurement.unit.type)) return false;
     return Double.compare(this.standardValue, measurement.standardValue) == 0;
   }
 

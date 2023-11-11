@@ -1,19 +1,22 @@
 package com.tw.step9.measurement;
 
-// TODO: 11/11/23 extract type to separate enum
 public enum Units {
-  FEET(12, "Length"),
-  CM(0.4, "Length"),
-  MM(0.04, "Length"),
-  INCH(1, "Length"),
-  GALLON(3.78, "Volume"),
-  LITER(1, "Volume");
+  FEET(12, UnitTypes.LENGTH),
+  CM(0.4, UnitTypes.LENGTH),
+  MM(0.04, UnitTypes.LENGTH),
+  INCH(1, UnitTypes.LENGTH),
+  GALLON(3.78, UnitTypes.VOLUME),
+  LITER(1, UnitTypes.VOLUME);
 
   public final double conversionFactor;
-  public final String type;
+  public final UnitTypes type;
 
-  Units(double conversionFactor, String type) {
+  Units(double conversionFactor, UnitTypes type) {
     this.conversionFactor = conversionFactor;
     this.type = type;
+  }
+
+  public double standardize(double value) {
+    return value * this.conversionFactor;
   }
 }
