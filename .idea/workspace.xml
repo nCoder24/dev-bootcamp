@@ -8,8 +8,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51736a4d-1cac-4bb7-937d-68c656d476ae" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/com/tw/step9/chance/ChanceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/tw/step9/chance/ChanceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rectangle.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dev-bootcamp.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,11 +59,11 @@
     "full.screen.before.presentation.mode": "false",
     "git-widget-placeholder": "main",
     "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
     "rearrange.code.on.save": "true",
     "run.code.analysis.last.selected.profile": "pProject Default",
-    "settings.editor.selected.configurable": "actions.on.save"
+    "settings.editor.selected.configurable": "file.status.colors"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -82,9 +84,9 @@
       <recent name="com.tw.step9.chance" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ChanceTest.shouldRepresentTheChanceOfGettingAtLeastOneTailsWhenFlippingTwoCoins">
+  <component name="RunManager" selected="JUnit.ChanceTest">
     <configuration name="ChanceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rectangle" />
+      <module name="dev-bootcamp" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.tw.step9.chance.*" />
@@ -98,24 +100,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ChanceTest.shouldGetTheInverseOfTheChance" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rectangle" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tw.step9.chance.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tw.step9.chance" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step9.chance.ChanceTest" />
-      <option name="METHOD_NAME" value="shouldGetTheInverseOfTheChance" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ChanceTest.shouldMultiplyTwoChances" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rectangle" />
+      <module name="dev-bootcamp" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.tw.step9.chance.*" />
@@ -131,7 +117,7 @@
       </method>
     </configuration>
     <configuration name="ChanceTest.shouldRepresentTheChanceOfGettingAtLeastOneTailsWhenFlippingTwoCoins" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rectangle" />
+      <module name="dev-bootcamp" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.tw.step9.chance.*" />
@@ -146,8 +132,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ChanceTest.shouldRepresentTheChanceOfGettingTailsWhenFlippingTwoCoins" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dev-bootcamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tw.step9.chance.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tw.step9.chance" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step9.chance.ChanceTest" />
+      <option name="METHOD_NAME" value="shouldRepresentTheChanceOfGettingTailsWhenFlippingTwoCoins" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ChanceTest.shouldRepresentTheChanceOfNotGettingTailWhenFlippingOneCoin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="rectangle" />
+      <module name="dev-bootcamp" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.tw.step9.chance.*" />
@@ -162,13 +164,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="dev-bootcamp" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="dev-bootcamp" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ChanceTest" />
+        <item itemvalue="JUnit.ChanceTest.shouldRepresentTheChanceOfGettingTailsWhenFlippingTwoCoins" />
         <item itemvalue="JUnit.ChanceTest.shouldRepresentTheChanceOfGettingAtLeastOneTailsWhenFlippingTwoCoins" />
         <item itemvalue="JUnit.ChanceTest.shouldRepresentTheChanceOfNotGettingTailWhenFlippingOneCoin" />
-        <item itemvalue="JUnit.ChanceTest" />
         <item itemvalue="JUnit.ChanceTest.shouldMultiplyTwoChances" />
-        <item itemvalue="JUnit.ChanceTest.shouldGetTheInverseOfTheChance" />
       </list>
     </recent_temporary>
   </component>
@@ -187,7 +202,12 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
+    <expand>
+      <path>
+        <item name="dev-bootcamp" type="b2602c69:ProjectViewProjectNode" />
+        <item name="dir{file:///Users/utsab/workspace/bootcamp/rectangle}" type="462c0819:PsiDirectoryNode" />
+      </path>
+    </expand>
     <select />
   </component>
 </project>
