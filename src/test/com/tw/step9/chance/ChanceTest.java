@@ -7,12 +7,12 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class ChanceTest {
   @Test
-  void shouldThrowExceptionIfCreatingChanceOfNegativeProbability() {
+  void shouldThrowExceptionForCreatingChanceOfNegativeProbability() {
     assertThrows(InvalidRangeException.class, () -> Chance.create(-0.5));
   }
 
   @Test
-  void shouldThrowExceptionIfCreatingChanceOfProbabilityGreaterThanOne() {
+  void shouldThrowExceptionForCreatingChanceOfProbabilityGreaterThanOne() {
     assertThrows(InvalidRangeException.class, () -> Chance.create(1.5));
   }
 
@@ -35,7 +35,7 @@ class ChanceTest {
   }
 
   @Test
-  void shouldRepresentTheChanceOfGettingTailsWhenFlippingTwoCoins() throws InvalidRangeException {
+  void shouldRepresentTheChanceOfGettingBothTailsWhenFlippingTwoCoins() throws InvalidRangeException {
     Chance chanceOfGettingTail = Chance.create(0.5);
     Chance chanceOfGettingBothTails = chanceOfGettingTail.and(chanceOfGettingTail);
 
