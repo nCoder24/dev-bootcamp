@@ -4,38 +4,29 @@ import java.util.Objects;
 
 public class Measurement implements Comparable<Measurement> {
   private final double standardValue;
+  private final Units unit;
 
-  private Measurement(double value) {
-    this.standardValue = value;
+  private Measurement(double standardValue, Units unit) {
+    this.standardValue = standardValue;
+    this.unit = unit;
   }
 
-  public static Measurement inch(double value) {
-    // TODO: 11/11/23 add validation checks
-    return new Measurement(value);
-  }
-
-  private static double standardize(double value, LengthUnits unit) {
+  private static double standardize(double value, Units unit) {
     return value * unit.conversionFactor;
   }
 
-  public static Measurement feet(double value) {
-    return Measurement.inch(standardize(value, LengthUnits.FEET));
-  }
-
-  public static Measurement centimeter(double value) {
-    return Measurement.inch(standardize(value, LengthUnits.CM));
-  }
-
-  public static Measurement millimeter(int value) {
-    return Measurement.inch(standardize(value, LengthUnits.MM));
+  public static Measurement create(double value, Units unit) {
+    // TODO: 11/11/23 add validation checks
+    return new Measurement(standardize(value, unit), unit);
   }
 
   @Override
   public boolean equals(Object o) {
     if (this == o) return true;
     if (o == null || this.getClass() != o.getClass()) return false;
-    Measurement length = (Measurement) o;
-    return Double.compare(this.standardValue, length.standardValue) == 0;
+    Measurement measurement = (Measurement) o;
+    if (this.unit != measurement.unit) return false;
+    return Double.compare(this.standardValue, measurement.standardValue) == 0;
   }
 
   @Override
