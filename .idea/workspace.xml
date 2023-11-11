@@ -8,8 +8,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51736a4d-1cac-4bb7-937d-68c656d476ae" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/com/tw/step9/length/ConversionFactor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/com/tw/step9/length/Length.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/tw/step9/length/Length.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/tw/step9/measurement/Measurement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/com/tw/step9/measurement/MeasurementTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tw/step9/measurement/Length.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/com/tw/step9/measurement/LengthTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +23,8 @@
       <list>
         <option value="Interface" />
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -84,80 +86,80 @@
       <recent name="com.tw.step9.chance" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LengthTest">
-    <configuration name="LengthTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MeasurementTest">
+    <configuration name="MeasurementTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dev-bootcamp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tw.step9.length.*" />
+          <option name="PATTERN" value="com.tw.step9.measurement.Measurement" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.tw.step9.length" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step9.length.LengthTest" />
+      <option name="PACKAGE_NAME" value="com.tw.step9.measurement" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step9.measurement.MeasurementTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LengthTest.shouldCalculateTheDifferenceOfTwoLengthsInFeet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MeasurementTest.shouldCalculateTheDifferenceOfTwoLengthsInFeet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dev-bootcamp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tw.step9.length.*" />
+          <option name="PATTERN" value="com.tw.step9.measurement.Measurement" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.tw.step9.length" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step9.length.LengthTest" />
+      <option name="PACKAGE_NAME" value="com.tw.step9.measurement" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step9.measurement.MeasurementTest" />
       <option name="METHOD_NAME" value="shouldCalculateTheDifferenceOfTwoLengthsInFeet" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LengthTest.shouldCalculateTheDifferenceOfTwoLengthsInInchAndCentimeter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MeasurementTest.shouldCalculateTheDifferenceOfTwoLengthsInInchAndCentimeter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dev-bootcamp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tw.step9.length.*" />
+          <option name="PATTERN" value="com.tw.step9.measurement.Measurement" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.tw.step9.length" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step9.length.LengthTest" />
+      <option name="PACKAGE_NAME" value="com.tw.step9.measurement" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step9.measurement.MeasurementTest" />
       <option name="METHOD_NAME" value="shouldCalculateTheDifferenceOfTwoLengthsInInchAndCentimeter" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LengthTest.shouldCalculateTheDifferenceOfTwoLengthsInInchAndFeet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MeasurementTest.shouldCalculateTheDifferenceOfTwoLengthsInInchAndFeet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dev-bootcamp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tw.step9.length.*" />
+          <option name="PATTERN" value="com.tw.step9.measurement.Measurement" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.tw.step9.length" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step9.length.LengthTest" />
+      <option name="PACKAGE_NAME" value="com.tw.step9.measurement" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step9.measurement.MeasurementTest" />
       <option name="METHOD_NAME" value="shouldCalculateTheDifferenceOfTwoLengthsInInchAndFeet" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LengthTest.shouldCalculateTheDifferenceOfTwoLengthsMillimeterAndCentimeter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MeasurementTest.shouldCalculateTheDifferenceOfTwoLengthsMillimeterAndCentimeter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dev-bootcamp" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.tw.step9.length.*" />
+          <option name="PATTERN" value="com.tw.step9.measurement.Measurement" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.tw.step9.length" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step9.length.LengthTest" />
+      <option name="PACKAGE_NAME" value="com.tw.step9.measurement" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step9.measurement.MeasurementTest" />
       <option name="METHOD_NAME" value="shouldCalculateTheDifferenceOfTwoLengthsMillimeterAndCentimeter" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -166,11 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.LengthTest" />
-        <item itemvalue="JUnit.LengthTest.shouldCalculateTheDifferenceOfTwoLengthsMillimeterAndCentimeter" />
-        <item itemvalue="JUnit.LengthTest.shouldCalculateTheDifferenceOfTwoLengthsInInchAndCentimeter" />
-        <item itemvalue="JUnit.LengthTest.shouldCalculateTheDifferenceOfTwoLengthsInInchAndFeet" />
-        <item itemvalue="JUnit.LengthTest.shouldCalculateTheDifferenceOfTwoLengthsInFeet" />
+        <item itemvalue="JUnit.MeasurementTest" />
+        <item itemvalue="JUnit.MeasurementTest.shouldCalculateTheDifferenceOfTwoLengthsMillimeterAndCentimeter" />
+        <item itemvalue="JUnit.MeasurementTest.shouldCalculateTheDifferenceOfTwoLengthsInInchAndCentimeter" />
+        <item itemvalue="JUnit.MeasurementTest.shouldCalculateTheDifferenceOfTwoLengthsInInchAndFeet" />
+        <item itemvalue="JUnit.MeasurementTest.shouldCalculateTheDifferenceOfTwoLengthsInFeet" />
       </list>
     </recent_temporary>
   </component>
