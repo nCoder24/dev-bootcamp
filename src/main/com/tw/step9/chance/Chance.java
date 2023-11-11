@@ -38,6 +38,6 @@ public class Chance {
 
 
   public Chance or(Chance other) throws InvalidRangeException {
-    return Chance.create(this.probability + other.probability - this.and(other).probability);
+    return this.not().and(other.not()).not();
   }
 }
