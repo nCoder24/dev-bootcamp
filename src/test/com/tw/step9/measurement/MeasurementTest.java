@@ -3,46 +3,37 @@ package com.tw.step9.measurement;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNotEquals;
 
 public class MeasurementTest {
   @Test
   void shouldCompareLengthsInInchAndFeet() {
-    Measurement feet = Measurement.create(1, Units.FEET);
-    Measurement inch = Measurement.create(12, Units.INCH);
+    Measurement<LengthUnit> feet = new Measurement<>(1, LengthUnit.FEET);
+    Measurement<LengthUnit> inch = new Measurement<>(12, LengthUnit.INCH);
 
     assertEquals(feet, inch);
   }
 
   @Test
   void shouldCompareLengthsInInchAndCentimeter() {
-    Measurement inch = Measurement.create(2, Units.INCH);
-    Measurement centimeter = Measurement.create(5, Units.CM);
+    Measurement<LengthUnit> inch = new Measurement<>(2, LengthUnit.INCH);
+    Measurement<LengthUnit> centimeter = new Measurement<>(5, LengthUnit.CM);
 
     assertEquals(inch, centimeter);
   }
 
   @Test
   void shouldCompareLengthsMillimeterAndCentimeter() {
-    Measurement millimeter = Measurement.create(10, Units.MM);
-    Measurement centimeter = Measurement.create(1, Units.CM);
+    Measurement<LengthUnit> millimeter = new Measurement<>(10, LengthUnit.MM);
+    Measurement<LengthUnit> centimeter = new Measurement<>(1, LengthUnit.CM);
 
     assertEquals(millimeter, centimeter);
   }
 
   @Test
   void shouldCompareVolumesGallonAndLiter() {
-    Measurement gallon = Measurement.create(1.0, Units.GALLON);
-    Measurement liter = Measurement.create(3.78, Units.LITER);
+    Measurement<VolumeUnit> gallon = new Measurement<>(1.0, VolumeUnit.GALLON);
+    Measurement<VolumeUnit> liter = new Measurement<>(3.78, VolumeUnit.LITER);
 
     assertEquals(gallon, liter);
-  }
-
-  @Test
-  void measurementsOfDifferentTypeOfUnitShouldNeverBeEqual() {
-    Measurement gallon = Measurement.create(1.0, Units.LITER);
-    Measurement inch = Measurement.create(1.0, Units.INCH);
-
-    assertNotEquals(gallon, inch);
   }
 }

@@ -2,43 +2,40 @@ package com.tw.step9.measurement;
 
 import java.util.Objects;
 
-public class Measurement implements Comparable<Measurement> {
-  private final double standardValue;
-  private final Units unit;
+public class Measurement<U extends Unit> {
+  private final double value;
+  private final U unit;
 
-  private Measurement(double standardValue, Units unit) {
-    this.standardValue = standardValue;
+  public Measurement(double value, U unit) {
+    this.value = value;
     this.unit = unit;
-  }
-
-  public static Measurement create(double value, Units unit) {
-    // TODO: 11/11/23 add validation checks
-    return new Measurement(unit.standardize(value), unit);
   }
 
   @Override
   public boolean equals(Object o) {
     if (this == o) return true;
     if (o == null || this.getClass() != o.getClass()) return false;
-    Measurement measurement = (Measurement) o;
-    if (!this.unit.type.equals(measurement.unit.type)) return false;
-    return Double.compare(this.standardValue, measurement.standardValue) == 0;
+    Measurement<?> other = (Measurement<?>) o;
+    return this.hasEqualValue(other) && this.hasSameStandardUnit(other);
+  }
+
+  private boolean hasSameStandardUnit(Measurement<?> other) {
+    return this.unit.standardUnit() == other.unit.standardUnit();
+  }
+
+  private boolean hasEqualValue(Measurement<?> other) {
+    return Double.compare(this.unit.standardize(this.value), other.unit.standardize(other.value)) == 0;
   }
 
   @Override
   public int hashCode() {
-    return Objects.hash(this.standardValue);
+    return Objects.hash(this.value, this.unit);
   }
 
   @Override
   public String toString() {
     return "Length{" +
-        "inchValue=" + this.standardValue +
+        "inchValue=" + this.value +
         '}';
-  }
-
-  @Override
-  public int compareTo(Measurement other) {
-    return (int) (this.standardValue - other.standardValue);
   }
 }
