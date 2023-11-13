@@ -10,7 +10,7 @@ public class ParkingLot {
   }
 
   public static ParkingLot create(int totalSlots) throws InvalidSizeException {
-    if (totalSlots <= 0) throw new InvalidSizeException();
+    if (totalSlots < 0) throw new InvalidSizeException();
     return new ParkingLot(totalSlots, totalSlots);
   }
 
@@ -22,5 +22,10 @@ public class ParkingLot {
 
   public boolean isFull() {
     return this.availableSlots == 0;
+  }
+
+
+  public boolean isAvailable() {
+    return !this.isFull();
   }
 }

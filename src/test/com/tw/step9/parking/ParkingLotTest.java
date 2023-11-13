@@ -28,4 +28,10 @@ public class ParkingLotTest {
     ParkingLot parkingLot = ParkingLot.create(5);
     assertFalse(parkingLot.isFull());
   }
+  
+  @Test
+  void shouldAbleKnowIfParkingLotIsAvailable() throws InvalidSizeException {
+    assertTrue(ParkingLot.create(1).isAvailable());
+    assertFalse(ParkingLot.create(0).isAvailable());
+  }
 }
