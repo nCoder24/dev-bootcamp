@@ -1,25 +1,31 @@
 package com.tw.step9.parking;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 public class ParkingLotTest {
   @Test
-  void shouldAbleToParkACar() {
+  void shouldAbleToParkACar() throws InvalidSizeException {
     ParkingLot parkingLot = ParkingLot.create(5, 5);
-    Assertions.assertTrue(parkingLot.park());
+    assertTrue(parkingLot.park());
   }
 
   @Test
-  void shouldNotBeAbleToParkACarIfLotIsFull() {
+  void parkingLotCannotBeCreatedForInvalidSize() throws InvalidSizeException {
+    assertThrows(InvalidSizeException.class, () -> ParkingLot.create(-5, 5));
+  }
+
+  @Test
+  void shouldNotBeAbleToParkACarIfLotIsFull() throws InvalidSizeException {
     ParkingLot parkingLot = ParkingLot.create(1, 1);
     parkingLot.park();
-    Assertions.assertFalse(parkingLot.park());
+    assertFalse(parkingLot.park());
   }
 
   @Test
-  void shouldAbleToKnowWhenTheLotIsFull() {
+  void shouldAbleToKnowWhenTheLotIsFull() throws InvalidSizeException {
     ParkingLot parkingLot = ParkingLot.create(5, 5);
-    Assertions.assertFalse(parkingLot.isFull());
+    assertFalse(parkingLot.isFull());
   }
 }

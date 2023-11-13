@@ -8,9 +8,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51736a4d-1cac-4bb7-937d-68c656d476ae" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/com/tw/step9/parking/ParkingLot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/com/tw/step9/parking/ParkingLotTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/tw/step9/parking/InvalidSizeException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tw/step9/parking/ParkingLot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/tw/step9/parking/ParkingLot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/com/tw/step9/parking/ParkingLotTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/tw/step9/parking/ParkingLotTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +88,7 @@
       <recent name="com.tw.step9.chance" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ParkingLotTest.shouldNotBeAbleToParkACarIfLotIsFull">
+  <component name="RunManager" selected="JUnit.ParkingLotTest">
     <configuration name="MeasurementTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dev-bootcamp" />
       <extension name="coverage">
@@ -104,22 +104,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MeasurementTest.shouldCompareValuesOfTemperatureUnits" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="dev-bootcamp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tw.step9.measurement.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tw.step9.measurement" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step9.measurement.MeasurementTest" />
-      <option name="METHOD_NAME" value="shouldCompareValuesOfTemperatureUnits" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ParkingLotTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dev-bootcamp" />
       <extension name="coverage">
@@ -131,6 +115,22 @@
       <option name="PACKAGE_NAME" value="com.tw.step9.parking" />
       <option name="MAIN_CLASS_NAME" value="com.tw.step9.parking.ParkingLotTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParkingLotTest.parkingLotCannotBeCreatedForInvalidSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dev-bootcamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tw.step9.parking.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tw.step9.parking" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step9.parking.ParkingLotTest" />
+      <option name="METHOD_NAME" value="parkingLotCannotBeCreatedForInvalidSize" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -169,11 +169,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ParkingLotTest.shouldNotBeAbleToParkACarIfLotIsFull" />
         <item itemvalue="JUnit.ParkingLotTest" />
+        <item itemvalue="JUnit.ParkingLotTest.parkingLotCannotBeCreatedForInvalidSize" />
+        <item itemvalue="JUnit.ParkingLotTest.shouldNotBeAbleToParkACarIfLotIsFull" />
         <item itemvalue="JUnit.ParkingLotTest.shouldAbleToParkACarInEmptyPosition" />
         <item itemvalue="JUnit.MeasurementTest" />
-        <item itemvalue="JUnit.MeasurementTest.shouldCompareValuesOfTemperatureUnits" />
       </list>
     </recent_temporary>
   </component>

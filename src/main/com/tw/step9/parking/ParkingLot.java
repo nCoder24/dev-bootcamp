@@ -9,8 +9,8 @@ public class ParkingLot {
     this.carParked = carParked;
   }
 
-  public static ParkingLot create(int width, int height) {
-    // TODO: 13/11/23 validation
+  public static ParkingLot create(int width, int height) throws InvalidSizeException {
+    if (width <= 0 || height <= 0) throw new InvalidSizeException();
     return new ParkingLot(width * height, 0);
   }
 
