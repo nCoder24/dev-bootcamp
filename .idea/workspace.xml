@@ -8,6 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51736a4d-1cac-4bb7-937d-68c656d476ae" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/com/tw/step9/measurement/TemperatureUnit.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/com/tw/step9/measurement/Measurement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/tw/step9/measurement/Measurement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/com/tw/step9/measurement/MeasurementTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/tw/step9/measurement/MeasurementTest.java" afterDir="false" />
@@ -22,8 +23,8 @@
       <list>
         <option value="JUnit5 Test Class" />
         <option value="Class" />
-        <option value="Enum" />
         <option value="Interface" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -103,22 +104,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MeasurementTest.measurementsOfDifferentTypeOfUnitShouldNeverBeEqual" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="dev-bootcamp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tw.step9.measurement.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tw.step9.measurement" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step9.measurement.MeasurementTest" />
-      <option name="METHOD_NAME" value="measurementsOfDifferentTypeOfUnitShouldNeverBeEqual" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MeasurementTest.shouldAddTwoMeasurementsDifferentUnitsOfSameTypes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dev-bootcamp" />
       <extension name="coverage">
@@ -167,13 +152,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MeasurementTest.shouldCompareValuesOfTemperatureUnits" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dev-bootcamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tw.step9.measurement.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tw.step9.measurement" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step9.measurement.MeasurementTest" />
+      <option name="METHOD_NAME" value="shouldCompareValuesOfTemperatureUnits" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.MeasurementTest" />
+        <item itemvalue="JUnit.MeasurementTest.shouldCompareValuesOfTemperatureUnits" />
         <item itemvalue="JUnit.MeasurementTest.shouldAddTwoMeasurementsDifferentUnitsOfSameTypes" />
         <item itemvalue="JUnit.MeasurementTest.shouldAddTwoMeasurementsOfSameUnits" />
         <item itemvalue="JUnit.MeasurementTest.shouldAddTwoMeasurementsOfSameTypes" />
-        <item itemvalue="JUnit.MeasurementTest.measurementsOfDifferentTypeOfUnitShouldNeverBeEqual" />
       </list>
     </recent_temporary>
   </component>
@@ -190,6 +191,17 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/com/tw/step9/measurement/Measurement.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand>

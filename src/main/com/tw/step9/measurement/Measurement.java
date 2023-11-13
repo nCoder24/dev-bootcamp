@@ -38,8 +38,10 @@ public class Measurement<U extends Unit> {
 
   @Override
   public String toString() {
-    return "Length{" +
-        "inchValue=" + this.value +
+    return "Measurement{" +
+        "value=" + this.value +
+        ", unit=" + this.unit +
+        ", standardValue=" + this.unit.standardize(this.value) +
         '}';
   }
 
