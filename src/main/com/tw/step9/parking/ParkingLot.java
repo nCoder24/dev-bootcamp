@@ -1,26 +1,24 @@
 package com.tw.step9.parking;
 
 public class ParkingLot {
-  private final int totalPlaces;
-  private int carParked;
+  private int availableSlots;
 
-  private ParkingLot(int totalPlaces, int carParked) {
-    this.totalPlaces = totalPlaces;
-    this.carParked = carParked;
+  private ParkingLot(int availableSlots) {
+    this.availableSlots = availableSlots;
   }
 
   public static ParkingLot create(int width, int height) throws InvalidSizeException {
     if (width <= 0 || height <= 0) throw new InvalidSizeException();
-    return new ParkingLot(width * height, 0);
+    return new ParkingLot(width * height);
   }
 
   public boolean park() {
     if (this.isFull()) return false;
-    this.carParked++;
+    this.availableSlots--;
     return true;
   }
 
   public boolean isFull() {
-    return this.totalPlaces == this.carParked;
+    return this.availableSlots == 0;
   }
 }
