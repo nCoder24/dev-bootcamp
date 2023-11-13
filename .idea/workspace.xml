@@ -8,9 +8,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51736a4d-1cac-4bb7-937d-68c656d476ae" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/com/tw/step9/parking/ParkingLotAttendant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tw/step9/parking/InvalidSizeException.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/com/tw/step9/parking/ParkingLot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/tw/step9/parking/ParkingLot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/com/tw/step9/parking/ParkingLotAttendantTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/tw/step9/parking/ParkingLotAttendantTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/com/tw/step9/parking/ParkingLotTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/tw/step9/parking/ParkingLotTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
