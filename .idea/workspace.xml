@@ -8,9 +8,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51736a4d-1cac-4bb7-937d-68c656d476ae" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/com/tw/step9/parking/Display.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/com/tw/step9/parking/ParkingAssistant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/com/tw/step9/parking/InvalidSizeException.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/com/tw/step9/parking/ParkingLot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/tw/step9/parking/ParkingLot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/com/tw/step9/parking/ParkingLotAttendant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/tw/step9/parking/ParkingLotAttendant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/com/tw/step9/parking/ParkingLotAttendantTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/tw/step9/parking/ParkingLotAttendantTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/com/tw/step9/parking/ParkingLotTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/com/tw/step9/parking/ParkingLotTest.java" afterDir="false" />
     </list>
@@ -90,8 +92,16 @@
       <recent name="com.tw.step9.chance" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ParkingLotAttendantTest.shouldBeAbleToParkACarInParkingLot">
-    <configuration name="ParkingLotAttendantTest.shouldBeAbleToParkACarInParkingLot" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.All in dev-bootcamp">
+    <configuration name="All in dev-bootcamp" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dev-bootcamp" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParkingLotAttendantTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dev-bootcamp" />
       <extension name="coverage">
         <pattern>
@@ -101,7 +111,22 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.tw.step9.parking" />
       <option name="MAIN_CLASS_NAME" value="com.tw.step9.parking.ParkingLotAttendantTest" />
-      <option name="METHOD_NAME" value="shouldBeAbleToParkACarInParkingLot" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParkingLotAttendantTest.shouldBeAbleToAssignAnAssistantForTheAttendant" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dev-bootcamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tw.step9.parking.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tw.step9.parking" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step9.parking.ParkingLotAttendantTest" />
+      <option name="METHOD_NAME" value="shouldBeAbleToAssignAnAssistantForTheAttendant" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -122,7 +147,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ParkingLotTest.parkingLotCannotBeCreatedForInvalidSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ParkingLotTest.shouldBeNotifiedWhenACarIsParked" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dev-bootcamp" />
       <extension name="coverage">
         <pattern>
@@ -132,39 +157,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.tw.step9.parking" />
       <option name="MAIN_CLASS_NAME" value="com.tw.step9.parking.ParkingLotTest" />
-      <option name="METHOD_NAME" value="parkingLotCannotBeCreatedForInvalidSize" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ParkingLotTest.shouldAbleKnowIfParkingLotIsAvailable" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="dev-bootcamp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tw.step9.parking.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tw.step9.parking" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step9.parking.ParkingLotTest" />
-      <option name="METHOD_NAME" value="shouldAbleKnowIfParkingLotIsAvailable" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ParkingLotTest.shouldNotBeAbleToParkACarIfLotIsFull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="dev-bootcamp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tw.step9.parking.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tw.step9.parking" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step9.parking.ParkingLotTest" />
-      <option name="METHOD_NAME" value="shouldNotBeAbleToParkACarIfLotIsFull" />
+      <option name="METHOD_NAME" value="shouldBeNotifiedWhenACarIsParked" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -172,11 +165,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ParkingLotAttendantTest.shouldBeAbleToParkACarInParkingLot" />
+        <item itemvalue="JUnit.All in dev-bootcamp" />
+        <item itemvalue="JUnit.ParkingLotAttendantTest" />
         <item itemvalue="JUnit.ParkingLotTest" />
-        <item itemvalue="JUnit.ParkingLotTest.shouldAbleKnowIfParkingLotIsAvailable" />
-        <item itemvalue="JUnit.ParkingLotTest.parkingLotCannotBeCreatedForInvalidSize" />
-        <item itemvalue="JUnit.ParkingLotTest.shouldNotBeAbleToParkACarIfLotIsFull" />
+        <item itemvalue="JUnit.ParkingLotTest.shouldBeNotifiedWhenACarIsParked" />
+        <item itemvalue="JUnit.ParkingLotAttendantTest.shouldBeAbleToAssignAnAssistantForTheAttendant" />
       </list>
     </recent_temporary>
   </component>

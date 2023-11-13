@@ -20,4 +20,8 @@ public class ParkingLotAttendant {
 
     return false;
   }
+
+  public void assign(ParkingAssistant assistant) {
+    assistant.monitor(this.parkingLots);
+  }
 }
