@@ -11,14 +11,6 @@ public class Measurement<U extends Unit> {
     this.unit = unit;
   }
 
-  @Override
-  public boolean equals(Object o) {
-    if (this == o) return true;
-    if (o == null || this.getClass() != o.getClass()) return false;
-    Measurement<?> other = (Measurement<?>) o;
-    return this.hasEqualValue(other) && this.hasSameStandardUnit(other);
-  }
-
   private boolean hasSameStandardUnit(Measurement<? extends Unit> other) {
     return this.unit.standardUnit() == other.unit.standardUnit();
   }
@@ -29,6 +21,14 @@ public class Measurement<U extends Unit> {
 
   private double standardizeValue(Measurement<? extends Unit> measurement) {
     return measurement.unit.standardize(measurement.value);
+  }
+
+  @Override
+  public boolean equals(Object o) {
+    if (this == o) return true;
+    if (o == null || this.getClass() != o.getClass()) return false;
+    Measurement<?> other = (Measurement<?>) o;
+    return this.hasEqualValue(other) && this.hasSameStandardUnit(other);
   }
 
   @Override
@@ -46,7 +46,7 @@ public class Measurement<U extends Unit> {
   }
 
   public Measurement<? extends Unit> add(Measurement<U> other) {
-    double addition = this.standardizeValue(this) + this.standardizeValue(other);
-    return new Measurement<>(addition, this.unit.standardUnit());
+    double sum = this.standardizeValue(this) + this.standardizeValue(other);
+    return new Measurement<>(sum, this.unit.standardUnit());
   }
 }
