@@ -36,4 +36,25 @@ public class MeasurementTest {
 
     assertEquals(gallon, liter);
   }
+
+  @Test
+  void shouldAddTwoMeasurementsOfSameUnits() {
+    Measurement<LengthUnit> inch1 = new Measurement<>(2.0, LengthUnit.INCH);
+    Measurement<LengthUnit> inch2 = new Measurement<>(3.0, LengthUnit.INCH);
+
+    assertEquals(new Measurement<>(5.0, LengthUnit.INCH), inch1.add(inch2));
+  }
+
+  @Test
+  void shouldAddTwoMeasurementsDifferentUnitsOfSameTypes() {
+    Measurement<LengthUnit> inch1 = new Measurement<>(2.0, LengthUnit.INCH);
+    Measurement<LengthUnit> inch2 = new Measurement<>(2.5, LengthUnit.CM);
+
+    assertEquals(new Measurement<>(3.0, LengthUnit.INCH), inch1.add(inch2));
+
+    Measurement<VolumeUnit> gallon = new Measurement<>(1, VolumeUnit.GALLON);
+    Measurement<VolumeUnit> liter = new Measurement<>(1, VolumeUnit.LITER);
+
+    assertEquals(new Measurement<>(4.78, VolumeUnit.LITER), gallon.add(liter));
+  }
 }

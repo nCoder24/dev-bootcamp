@@ -19,12 +19,16 @@ public class Measurement<U extends Unit> {
     return this.hasEqualValue(other) && this.hasSameStandardUnit(other);
   }
 
-  private boolean hasSameStandardUnit(Measurement<?> other) {
+  private boolean hasSameStandardUnit(Measurement<? extends Unit> other) {
     return this.unit.standardUnit() == other.unit.standardUnit();
   }
 
-  private boolean hasEqualValue(Measurement<?> other) {
-    return Double.compare(this.unit.standardize(this.value), other.unit.standardize(other.value)) == 0;
+  private boolean hasEqualValue(Measurement<? extends Unit> other) {
+    return Math.abs(this.standardizeValue(this) - this.standardizeValue(other)) < 0.01;
+  }
+
+  private double standardizeValue(Measurement<? extends Unit> measurement) {
+    return measurement.unit.standardize(measurement.value);
   }
 
   @Override
@@ -37,5 +41,10 @@ public class Measurement<U extends Unit> {
     return "Length{" +
         "inchValue=" + this.value +
         '}';
+  }
+
+  public Measurement<? extends Unit> add(Measurement<U> other) {
+    double addition = this.standardizeValue(this) + this.standardizeValue(other);
+    return new Measurement<>(addition, this.unit.standardUnit());
   }
 }
