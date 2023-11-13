@@ -8,8 +8,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="51736a4d-1cac-4bb7-937d-68c656d476ae" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/com/tw/step9/parking/ParkingLot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/com/tw/step9/parking/ParkingLotTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/com/tw/step9/measurement/Measurement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/com/tw/step9/measurement/Measurement.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,9 +21,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="Class" />
         <option value="Interface" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -46,27 +47,28 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;code.cleanup.on.save&quot;: &quot;true&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
-    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
-    &quot;full.screen.before.presentation.mode&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;rearrange.code.on.save&quot;: &quot;true&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;file.status.colors&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "code.cleanup.on.save": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "full.screen.before.presentation.mode": "false",
+    "git-widget-placeholder": "main",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "rearrange.code.on.save": "true",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "settings.editor.selected.configurable": "preferences.intentionPowerPack"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.tw.step9.parking" />
       <recent name="com.tw.step9.measurement" />
       <recent name="com.tw.step9.length" />
       <recent name="com.tw.step9.chance" />
@@ -86,7 +88,7 @@
       <recent name="com.tw.step9.chance" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MeasurementTest">
+  <component name="RunManager" selected="JUnit.ParkingLotTest.shouldNotBeAbleToParkACarIfLotIsFull">
     <configuration name="MeasurementTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="dev-bootcamp" />
       <extension name="coverage">
@@ -98,54 +100,6 @@
       <option name="PACKAGE_NAME" value="com.tw.step9.measurement" />
       <option name="MAIN_CLASS_NAME" value="com.tw.step9.measurement.MeasurementTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MeasurementTest.shouldAddTwoMeasurementsDifferentUnitsOfSameTypes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="dev-bootcamp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tw.step9.measurement.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tw.step9.measurement" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step9.measurement.MeasurementTest" />
-      <option name="METHOD_NAME" value="shouldAddTwoMeasurementsDifferentUnitsOfSameTypes" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MeasurementTest.shouldAddTwoMeasurementsOfSameTypes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="dev-bootcamp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tw.step9.measurement.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tw.step9.measurement" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step9.measurement.MeasurementTest" />
-      <option name="METHOD_NAME" value="shouldAddTwoMeasurementsOfSameTypes" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MeasurementTest.shouldAddTwoMeasurementsOfSameUnits" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="dev-bootcamp" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.tw.step9.measurement.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.tw.step9.measurement" />
-      <option name="MAIN_CLASS_NAME" value="com.tw.step9.measurement.MeasurementTest" />
-      <option name="METHOD_NAME" value="shouldAddTwoMeasurementsOfSameUnits" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -166,13 +120,60 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ParkingLotTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dev-bootcamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tw.step9.parking.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tw.step9.parking" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step9.parking.ParkingLotTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParkingLotTest.shouldAbleToParkACarInEmptyPosition" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dev-bootcamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tw.step9.parking.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tw.step9.parking" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step9.parking.ParkingLotTest" />
+      <option name="METHOD_NAME" value="shouldAbleToParkACarInEmptyPosition" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ParkingLotTest.shouldNotBeAbleToParkACarIfLotIsFull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="dev-bootcamp" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.tw.step9.parking.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.tw.step9.parking" />
+      <option name="MAIN_CLASS_NAME" value="com.tw.step9.parking.ParkingLotTest" />
+      <option name="METHOD_NAME" value="shouldNotBeAbleToParkACarIfLotIsFull" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ParkingLotTest.shouldNotBeAbleToParkACarIfLotIsFull" />
+        <item itemvalue="JUnit.ParkingLotTest" />
+        <item itemvalue="JUnit.ParkingLotTest.shouldAbleToParkACarInEmptyPosition" />
         <item itemvalue="JUnit.MeasurementTest" />
         <item itemvalue="JUnit.MeasurementTest.shouldCompareValuesOfTemperatureUnits" />
-        <item itemvalue="JUnit.MeasurementTest.shouldAddTwoMeasurementsDifferentUnitsOfSameTypes" />
-        <item itemvalue="JUnit.MeasurementTest.shouldAddTwoMeasurementsOfSameUnits" />
-        <item itemvalue="JUnit.MeasurementTest.shouldAddTwoMeasurementsOfSameTypes" />
       </list>
     </recent_temporary>
   </component>
